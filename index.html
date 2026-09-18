@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lego Marveldle — Adivinhe o personagem do dia</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%23D01012%22/><circle cx=%2250%22 cy=%2238%22 r=%2216%22 fill=%22%23FFD500%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Baloo+2:wght@500;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="comic-frame" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="topbar-spacer"></div>
+  <div class="brand">
+    <span class="brand-kicker">THE DAILY</span>
+    <h1><span>LEGO</span> MARVELDLE</h1>
+    <span class="brand-sub">SUPER HEROES • GUESS GAME</span>
+  </div>
+  <nav class="topbar-actions">
+    <button type="button" class="icon-btn" id="btn-modes" title="Trocar modo" aria-label="Trocar modo">
+      <svg viewBox="0 0 24 24"><rect x="3.3" y="4.3" width="7" height="7" rx="1.4" stroke="currentColor" stroke-width="2.1" fill="none"/><rect x="13.7" y="4.3" width="7" height="7" rx="1.4" stroke="currentColor" stroke-width="2.1" fill="none"/><rect x="3.3" y="12.7" width="7" height="7" rx="1.4" stroke="currentColor" stroke-width="2.1" fill="none"/><rect x="13.7" y="12.7" width="7" height="7" rx="1.4" stroke="currentColor" stroke-width="2.1" fill="none"/></svg>
+    </button>
+    <button type="button" class="icon-btn" id="btn-stats" title="Estatísticas" aria-label="Estatísticas">
+      <svg viewBox="0 0 24 24"><path d="M4 20V10M12 20V4M20 20v-7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" fill="none"/></svg>
+    </button>
+    <button type="button" class="icon-btn" id="btn-settings" title="Configurações" aria-label="Configurações">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="2.2" fill="none"/><path d="M12 3v2.4M12 18.6V21M21 12h-2.4M5.4 12H3M18.1 5.9l-1.7 1.7M7.6 16.4l-1.7 1.7M18.1 18.1l-1.7-1.7M7.6 7.6 5.9 5.9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+    </button>
+    <button type="button" class="icon-btn" id="btn-help" title="Como jogar" aria-label="Como jogar">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.3" stroke="currentColor" stroke-width="2.2" fill="none"/><path d="M9.6 9.3a2.4 2.4 0 1 1 3.6 2.1c-.9.55-1.2 1-1.2 2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none"/><circle cx="12" cy="16.7" r="1.15" fill="currentColor"/></svg>
+    </button>
+  </nav>
+</header>
+
+<div class="hero-art" aria-hidden="true">
+  <div class="hero-burst burst-left">BAM!</div>
+  <div class="hero-burst burst-right">WOW!</div>
+  <img class="hero-character hero-left" src="assets/characters/Captain America (MSH).png" alt="">
+  <img class="hero-character hero-right" src="assets/characters/The Hulk (MSH).png" alt="">
+  <img class="hero-character hero-mid" src="assets/characters/Iron Man (Mark-42) (MSH).png" alt="">
+</div>
+
+<button type="button" class="mode-indicator" id="mode-indicator">
+  <span class="mode-indicator-icon" id="mode-indicator-icon">⏱</span>
+  <span class="mode-indicator-text">MODO: <strong id="mode-indicator-label">DESAFIO 6H</strong></span>
+  <span class="mode-indicator-swap">TROCAR ↻</span>
+</button>
+
+<div class="daily-ribbon" id="challenge-ribbon">
+  <span class="issue-badge" id="issue-badge">#1</span>
+  <span>DESAFIO ATUAL</span>
+  <span class="ribbon-star">★</span>
+</div>
+
+<div class="daily-ribbon hidden" id="practice-ribbon">
+  <span class="issue-badge">∞</span>
+  <span>MODO PRÁTICA</span>
+  <span class="ribbon-star">★</span>
+</div>
+
+<div class="daily-ribbon ribbon-shadow hidden" id="shadow-ribbon">
+  <span class="issue-badge">🌑</span>
+  <span>MODO SOMBRA</span>
+  <span class="ribbon-star">★</span>
+</div>
+
+<div class="reset-chip" id="reset-chip" title="Um novo personagem secreto é sorteado a cada 6 horas, ao mesmo tempo para todo mundo">
+  <span class="reset-icon" aria-hidden="true">⏱</span>
+  <span class="reset-text">PRÓXIMO DESAFIO EM <strong id="reset-countdown">--:--:--</strong></span>
+</div>
+
+<div class="practice-chip hidden" id="free-chip">
+  <span class="reset-icon" aria-hidden="true" id="free-chip-icon">🎲</span>
+  <span class="reset-text" id="free-chip-text">SEM LIMITE DE TENTATIVAS — JOGUE QUANTAS VEZES QUISER</span>
+  <button type="button" id="btn-new-free" class="new-practice-btn">Novo personagem</button>
+</div>
+
+<div class="shadow-hint hidden" id="shadow-hint">
+  <div class="shadow-hint-frame">
+    <img id="shadow-hint-img" src="" alt="">
+  </div>
+  <span class="shadow-hint-label">QUEM SERÁ...?</span>
+</div>
+
+<main class="wrap">
+
+  <div class="tagline comic-bubble">
+    <span class="bubble-kicker">ATENÇÃO, HERÓI!</span>
+    <strong>Adivinhe o personagem secreto de LEGO Marvel Super Heroes.</strong>
+    <span id="tagline-detail">8 tentativas • 1 personagem • pistas em cada palpite</span>
+  </div>
+
+  <section class="guess-box">
+    <div class="search-label"><span class="search-icon">⌕</span><span>QUEM É O PERSONAGEM?</span><span class="search-hint">Digite, escolha e mande ver.</span></div>
+    <div class="search-row">
+      <div class="combobox" id="combobox">
+        <input
+          type="text"
+          id="guess-input"
+          autocomplete="off"
+          spellcheck="false"
+          placeholder="Digite o nome de um personagem…"
+          aria-label="Digite o nome de um personagem"
+          aria-expanded="false"
+          role="combobox"
+          aria-autocomplete="list"
+          aria-controls="suggestions"
+        >
+        <ul id="suggestions" class="suggestions" role="listbox" hidden></ul>
+        <div class="search-corner" aria-hidden="true">✦</div>
+      </div>
+      <button type="button" id="btn-guess" class="ok-btn">OK</button>
+    </div>
+    <div class="guess-meta">
+      <span id="tries-label">Tentativa 1 de 8</span>
+      <span id="game-over-badge" class="hidden"></span>
+    </div>
+  </section>
+
+  <section class="board-wrap">
+    <div class="board-scroll">
+      <div class="board-header" id="board-header"></div>
+      <div class="board-rows" id="board-rows"></div>
+    </div>
+  </section>
+
+  <p class="hint-legend">
+    <span class="chip chip-correct">Verde</span> = acertou &nbsp;
+    <span class="chip chip-partial">Amarelo</span> = perto &nbsp;
+    <span class="chip chip-wrong">Cinza</span> = errado &nbsp;
+    <span class="chip chip-arrow">↑ ↓</span> = maior/depois ou menor/antes que o segredo
+  </p>
+
+</main>
+
+<footer class="page-footer">
+  Feito com peças (e pistas) de LEGO Marvel Super Heroes. Não afiliado à Marvel ou à LEGO.
+</footer>
+
+<!-- Modal: Escolha de modo (menu inicial) -->
+<div class="modal-overlay" id="modal-mode-select">
+  <div class="modal mode-select-modal" role="dialog" aria-modal="true" aria-labelledby="mode-select-title">
+    <button class="modal-close" data-close="modal-mode-select" aria-label="Fechar">✕</button>
+    <h2 id="mode-select-title">Escolha o modo</h2>
+    <p class="muted small">Como você quer jogar agora?</p>
+    <div class="mode-menu" id="mode-menu">
+      <button type="button" class="mode-card mode-card-challenge" data-mode="challenge">
+        <span class="mode-card-icon">⏱</span>
+        <span class="mode-card-text">
+          <strong>Desafio 6h</strong>
+          <small>O mesmo personagem pra todo mundo — muda a cada 6 horas</small>
+        </span>
+      </button>
+      <button type="button" class="mode-card mode-card-practice" data-mode="practice">
+        <span class="mode-card-icon">🎲</span>
+        <span class="mode-card-text">
+          <strong>Prática livre</strong>
+          <small>Personagem aleatório, sem limite de tentativas</small>
+        </span>
+      </button>
+      <button type="button" class="mode-card mode-card-shadow" data-mode="shadow">
+        <span class="mode-card-icon">🌑</span>
+        <span class="mode-card-text">
+          <strong>Sombra</strong>
+          <small>Adivinhe a partir da versão borrada do segredo</small>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Como jogar -->
+<div class="modal-overlay hidden" id="modal-help">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="help-title">
+    <button class="modal-close" data-close="modal-help" aria-label="Fechar">✕</button>
+    <h2 id="help-title">Como jogar</h2>
+    <p>Um personagem de <strong>LEGO Marvel Super Heroes</strong> é escolhido em segredo. Digite um nome no campo de busca e escolha um personagem na lista. Depois de cada palpite, as pistas aparecem coloridas:</p>
+    <ul class="help-list">
+      <li><span class="dot dot-correct"></span> <strong>Verde</strong> — esse atributo é igual ao do personagem secreto.</li>
+      <li><span class="dot dot-partial"></span> <strong>Amarelo</strong> — parecido, mas não exatamente igual.</li>
+      <li><span class="dot dot-wrong"></span> <strong>Cinza</strong> — diferente.</li>
+      <li><span class="dot dot-arrow">↑↓</span> — em atributos com ordem (Letra, Custo em studs), a seta mostra se o segredo vem depois/é maior (↑) ou antes/é menor (↓) que o seu palpite.</li>
+    </ul>
+    <p>Você pode esconder a foto do personagem nas <strong>Configurações</strong>, para tornar o desafio mais difícil.</p>
+
+    <h3>Modos de jogo</h3>
+    <ul class="help-list help-list-modes">
+      <li>
+        <span class="mode-dot mode-dot-challenge">⏱</span>
+        <span><strong>Desafio 6h</strong> — todo mundo recebe o mesmo personagem secreto. Ele muda automaticamente a cada <strong>6 horas</strong>, ao mesmo tempo para todo mundo, e cada rodada vale <strong>8 tentativas</strong>. É esse modo que conta para as suas estatísticas e para a sequência de vitórias.</span>
+      </li>
+      <li>
+        <span class="mode-dot mode-dot-practice">🎲</span>
+        <span><strong>Prática livre</strong> — um personagem aleatório só para você, sem tentativas limitadas e sem hora certa. Acerte ou desista e clique em <strong>“Novo personagem”</strong> para jogar de novo, quantas vezes quiser. Não conta para as estatísticas do Desafio.</span>
+      </li>
+      <li>
+        <span class="mode-dot mode-dot-shadow">🌑</span>
+        <span><strong>Sombra</strong> — igual à Prática (personagem aleatório, tentativas livres), mas o personagem secreto aparece <strong>borrado</strong> acima do tabuleiro — uma pista visual a mais.</span>
+      </li>
+    </ul>
+
+    <h3>O que significa cada categoria</h3>
+    <ul class="help-list help-list-categories">
+      <li><strong>Personagem</strong> — a foto do palpite (pode ser escondida nas Configurações).</li>
+      <li><strong>Letra</strong> — a primeira letra do nome do personagem. A seta indica se a letra do segredo vem depois (↑) ou antes (↓) da letra do seu palpite, em ordem alfabética.</li>
+      <li><strong>Alinhamento</strong> — se o personagem é do lado dos Heróis, dos Vilões ou é Neutro.</li>
+      <li><strong>Raça</strong> — a espécie/origem do personagem (Humano, Mutante, Inumano, Robô, Asgardiano, Alienígena, etc.). Fica <span class="dot dot-partial" style="vertical-align:middle"></span> amarelo quando a raça é diferente mas pertence ao mesmo grande grupo do segredo.</li>
+      <li><strong>Voo</strong> — se o personagem consegue voar (Sim/Não).</li>
+      <li><strong>Custo (studs)</strong> — quanto custa desbloquear o personagem na loja do jogo, em studs (a "moeda" do jogo).</li>
+      <li><strong>Tamanho</strong> — se o personagem é uma minifigura comum (<strong>Fig Pequena</strong>) ou uma das 8 Big Figs do jogo (<strong>Fig Grande</strong>): Abominação, Blob, Colossus, Hulk, Juggernaut, Coisa, Coisa (Future Foundation) e Duende Verde (Ultimate).</li>
+    </ul>
+
+    <p class="muted">No modo Desafio, ninguém escolhe ou escreve a resposta com antecedência: o personagem é sorteado por uma fórmula matemática a partir da hora atual, e todo mundo que jogar no mesmo período de 6 horas recebe o mesmo desafio.</p>
+  </div>
+</div>
+
+<!-- Modal: Configurações -->
+<div class="modal-overlay hidden" id="modal-settings">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="settings-title">
+    <button class="modal-close" data-close="modal-settings" aria-label="Fechar">✕</button>
+    <h2 id="settings-title">Configurações</h2>
+    <label class="switch-row">
+      <span>Mostrar a foto do personagem nos palpites</span>
+      <span class="switch">
+        <input type="checkbox" id="toggle-photo" checked>
+        <span class="switch-slider"></span>
+      </span>
+    </label>
+    <p class="muted small">Com essa opção desligada, você só vê os atributos — sem a imagem para te dar dica.</p>
+  </div>
+</div>
+
+<!-- Modal: Estatísticas -->
+<div class="modal-overlay hidden" id="modal-stats">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="stats-title">
+    <button class="modal-close" data-close="modal-stats" aria-label="Fechar">✕</button>
+    <h2 id="stats-title">Estatísticas</h2>
+    <p class="muted small hidden" id="stats-practice-note">Estatísticas do modo <strong>Desafio 6h</strong> — o modo Prática não conta pontos.</p>
+    <div class="stats-grid">
+      <div class="stat"><span class="stat-num" id="stat-played">0</span><span class="stat-label">Jogos</span></div>
+      <div class="stat"><span class="stat-num" id="stat-winrate">0%</span><span class="stat-label">Vitórias</span></div>
+      <div class="stat"><span class="stat-num" id="stat-streak">0</span><span class="stat-label">Sequência</span></div>
+      <div class="stat"><span class="stat-num" id="stat-max-streak">0</span><span class="stat-label">Melhor sequência</span></div>
+    </div>
+    <h3 class="dist-title">Distribuição de tentativas</h3>
+    <div id="dist-chart" class="dist-chart"></div>
+    <button type="button" id="btn-share" class="share-btn hidden">Compartilhar resultado</button>
+  </div>
+</div>
+
+<!-- Modal: fim de jogo -->
+<div class="modal-overlay hidden" id="modal-result">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="result-title">
+    <button class="modal-close" data-close="modal-result" aria-label="Fechar">✕</button>
+    <h2 id="result-title">Resultado</h2>
+    <div id="result-body" class="result-body"></div>
+    <button type="button" id="btn-share-2" class="share-btn">Compartilhar resultado</button>
+  </div>
+</div>
+
+<script src="js/characters.js?v=7"></script>
+<script src="js/game.js?v=7"></script>
+</body>
+</html>
