@@ -1,6 +1,4 @@
-/* Generated from data/characters.json. Do not edit by hand. */
-
-const CHARACTERS = [
+[
   {
     "id": "002",
     "sourceId": 2,
@@ -16,7 +14,7 @@ const CHARACTERS = [
     "sizeRank": 3,
     "team": "Fantastic Four",
     "img": "assets/characters/Mister Fantastic (Future Foundation) (MSH).png",
-    "locomotion": "Planador",
+    "locomotion": "Nenhuma",
     "dlc": null
   },
   {
@@ -34,7 +32,7 @@ const CHARACTERS = [
     "sizeRank": 3,
     "team": "Fantastic Four",
     "img": "assets/characters/Invisible Woman (MSH).png",
-    "locomotion": "Nenhuma",
+    "locomotion": "Voo",
     "dlc": null
   },
   {
@@ -88,7 +86,7 @@ const CHARACTERS = [
     "sizeRank": 3,
     "team": "Villains",
     "img": "assets/characters/Green Goblin (MSH).png",
-    "locomotion": "Planador",
+    "locomotion": "Voo",
     "dlc": null
   },
   {
@@ -106,7 +104,7 @@ const CHARACTERS = [
     "sizeRank": 3,
     "team": "Heróis Marvel",
     "img": "assets/characters/Silver Samurai (MSH).png",
-    "locomotion": "Nenhuma",
+    "locomotion": "Voo",
     "dlc": null
   },
   {
@@ -124,7 +122,7 @@ const CHARACTERS = [
     "sizeRank": 3,
     "team": "X-Men",
     "img": "assets/characters/Havok (MSH).png",
-    "locomotion": "Nenhuma",
+    "locomotion": "Voo",
     "dlc": null
   },
   {
@@ -214,7 +212,7 @@ const CHARACTERS = [
     "sizeRank": 3,
     "team": "Civis",
     "img": "assets/characters/Stan Lee (MSH).png",
-    "locomotion": "Teia",
+    "locomotion": "Nenhuma",
     "dlc": null
   },
   {
@@ -232,7 +230,7 @@ const CHARACTERS = [
     "sizeRank": 4,
     "team": "Avengers",
     "img": "assets/characters/The Hulk (MSH).png",
-    "locomotion": "Nenhuma",
+    "locomotion": "Voo",
     "dlc": null
   },
   {
@@ -268,7 +266,7 @@ const CHARACTERS = [
     "sizeRank": 3,
     "team": "Guardians",
     "img": "assets/characters/Rocket Raccoon (MSH).png",
-    "locomotion": "Nenhuma",
+    "locomotion": "Voo",
     "dlc": null
   },
   {
@@ -592,7 +590,7 @@ const CHARACTERS = [
     "sizeRank": 3,
     "team": "Villains",
     "img": "assets/characters/Doctor Doom (MSH).png",
-    "locomotion": "Nenhuma",
+    "locomotion": "Voo",
     "dlc": null
   },
   {
@@ -646,7 +644,7 @@ const CHARACTERS = [
     "sizeRank": 3,
     "team": "Spider-Verse",
     "img": "assets/characters/Carnage (MSH).png",
-    "locomotion": "Teia",
+    "locomotion": "Nenhuma",
     "dlc": null
   },
   {
@@ -700,7 +698,7 @@ const CHARACTERS = [
     "sizeRank": 3,
     "team": "Villains",
     "img": "assets/characters/Electro (MSH).png",
-    "locomotion": "Planador",
+    "locomotion": "Nenhuma",
     "dlc": null
   },
   {
@@ -736,7 +734,7 @@ const CHARACTERS = [
     "sizeRank": 3,
     "team": "Spider-Verse",
     "img": "assets/characters/Venom (MSH).png",
-    "locomotion": "Teia",
+    "locomotion": "Nenhuma",
     "dlc": null
   },
   {
@@ -872,7 +870,7 @@ const CHARACTERS = [
     "file": "Damage Control (MSH).png",
     "coins": 150000,
     "costLabel": "150.000 studs",
-    "faction": "Civil",
+    "faction": "Vilão",
     "race": "Humano",
     "raceGroup": "Terráqueo",
     "power": "Tecnologia",
@@ -934,7 +932,7 @@ const CHARACTERS = [
     "sizeRank": 3,
     "team": "X-Men",
     "img": "assets/characters/Professor X (MSH).png",
-    "locomotion": "Nenhuma",
+    "locomotion": "Voo",
     "dlc": null
   },
   {
@@ -1096,7 +1094,7 @@ const CHARACTERS = [
     "sizeRank": 3,
     "team": "X-Men",
     "img": "assets/characters/Cyclops (MSH).png",
-    "locomotion": "Nenhuma",
+    "locomotion": "Voo",
     "dlc": null
   },
   {
@@ -1114,7 +1112,7 @@ const CHARACTERS = [
     "sizeRank": 3,
     "team": "Asgardianos",
     "img": "assets/characters/Heimdall (MSH).png",
-    "locomotion": "Nenhuma",
+    "locomotion": "Voo",
     "dlc": null
   },
   {
@@ -1276,7 +1274,7 @@ const CHARACTERS = [
     "sizeRank": 3,
     "team": "Villains",
     "img": "assets/characters/Dormammu (MSH).png",
-    "locomotion": "Nenhuma",
+    "locomotion": "Voo",
     "dlc": null
   },
   {
@@ -1528,7 +1526,7 @@ const CHARACTERS = [
     "sizeRank": 3,
     "team": "X-Men",
     "img": "assets/characters/Polaris (MSH).png",
-    "locomotion": "Planador",
+    "locomotion": "Voo",
     "dlc": null
   },
   {
@@ -1582,7 +1580,7 @@ const CHARACTERS = [
     "sizeRank": 2,
     "team": "Heróis Marvel",
     "img": "assets/characters/Ant-Man (MSH).png",
-    "locomotion": "Nenhuma",
+    "locomotion": "Voo",
     "dlc": null
   },
   {
@@ -1672,7 +1670,7 @@ const CHARACTERS = [
     "sizeRank": 3,
     "team": "X-Men",
     "img": "assets/characters/Cyclops (Astonishing) (MSH).png",
-    "locomotion": "Nenhuma",
+    "locomotion": "Voo",
     "dlc": null
   },
   {
@@ -1690,7 +1688,7 @@ const CHARACTERS = [
     "sizeRank": 3,
     "team": "Villains",
     "img": "assets/characters/Loki (MSH).png",
-    "locomotion": "Nenhuma",
+    "locomotion": "Voo",
     "dlc": null
   },
   {
@@ -1708,7 +1706,7 @@ const CHARACTERS = [
     "sizeRank": 3,
     "team": "Heróis Marvel",
     "img": "assets/characters/Ghost Rider (MSH).png",
-    "locomotion": "Moto",
+    "locomotion": "Voo",
     "dlc": null
   },
   {
@@ -1816,7 +1814,7 @@ const CHARACTERS = [
     "sizeRank": 2,
     "team": "Fantastic Four",
     "img": "assets/characters/H.E.R.B.I.E (MSH).png",
-    "locomotion": "Planador",
+    "locomotion": "Voo",
     "dlc": null
   },
   {
@@ -1870,7 +1868,7 @@ const CHARACTERS = [
     "sizeRank": 3,
     "team": "Fantastic Four",
     "img": "assets/characters/Invisible Woman (Future Foundation) (MSH).png",
-    "locomotion": "Nenhuma",
+    "locomotion": "Voo",
     "dlc": null
   },
   {
@@ -1906,7 +1904,7 @@ const CHARACTERS = [
     "sizeRank": 3,
     "team": "X-Men",
     "img": "assets/characters/Magneto (MSH).png",
-    "locomotion": "Planador",
+    "locomotion": "Voo",
     "dlc": null
   },
   {
@@ -1996,7 +1994,7 @@ const CHARACTERS = [
     "sizeRank": 3,
     "team": "Avengers",
     "img": "assets/characters/Iron Man (Mark-1) (MSH).png",
-    "locomotion": "Planador",
+    "locomotion": "Voo",
     "dlc": null
   },
   {
@@ -2248,7 +2246,7 @@ const CHARACTERS = [
     "sizeRank": 3,
     "team": "Villains",
     "img": "assets/characters/Beetle (MSH).png",
-    "locomotion": "Voo",
+    "locomotion": "Nenhuma",
     "dlc": null
   },
   {
@@ -2428,7 +2426,7 @@ const CHARACTERS = [
     "sizeRank": 3,
     "team": "Villains",
     "img": "assets/characters/Iron Patriot (MSH).png",
-    "locomotion": "Voo",
+    "locomotion": "Nenhuma",
     "dlc": null
   },
   {
@@ -2500,7 +2498,7 @@ const CHARACTERS = [
     "sizeRank": 4,
     "team": "Avengers",
     "img": "assets/characters/Iron Man (Hulkbuster) (MSH).png",
-    "locomotion": "Planador",
+    "locomotion": "Voo",
     "dlc": null
   },
   {
@@ -2536,7 +2534,7 @@ const CHARACTERS = [
     "sizeRank": 3,
     "team": "Fantastic Four",
     "img": "assets/characters/Mister Fantastic (MSH).png",
-    "locomotion": "Planador",
+    "locomotion": "Nenhuma",
     "dlc": null
   },
   {
@@ -2554,7 +2552,7 @@ const CHARACTERS = [
     "sizeRank": 3,
     "team": "X-Men",
     "img": "assets/characters/Iceman (MSH).png",
-    "locomotion": "Planador",
+    "locomotion": "Nenhuma",
     "dlc": null
   },
   {
@@ -2590,7 +2588,7 @@ const CHARACTERS = [
     "sizeRank": 3,
     "team": "Villains",
     "img": "assets/characters/Electro (Ultimate) (MSH).png",
-    "locomotion": "Planador",
+    "locomotion": "Nenhuma",
     "dlc": null
   },
   {
@@ -2662,7 +2660,7 @@ const CHARACTERS = [
     "sizeRank": 3,
     "team": "X-Men",
     "img": "assets/characters/Storm (MSH).png",
-    "locomotion": "Planador",
+    "locomotion": "Voo",
     "dlc": null
   },
   {
@@ -2680,7 +2678,7 @@ const CHARACTERS = [
     "sizeRank": 3,
     "team": "Heróis Marvel",
     "img": "assets/characters/Doctor Strange (MSH).png",
-    "locomotion": "Voo",
+    "locomotion": "Nenhuma",
     "dlc": null
   },
   {
@@ -2706,8 +2704,8 @@ const CHARACTERS = [
     "sourceId": 241,
     "name": "A.I.M Agent",
     "file": "A.I.M Agent (MSH).png",
-    "coins": 250000,
-    "costLabel": "250.000 studs",
+    "coins": null,
+    "costLabel": "N/A",
     "faction": "Vilão",
     "race": "Humano",
     "raceGroup": "Terráqueo",
@@ -3246,12 +3244,12 @@ const CHARACTERS = [
     "sourceId": 271,
     "name": "H.E.R.B.I.E",
     "file": "H.E.R.B.I.E (MSH).png",
-    "coins": 200000,
-    "costLabel": "200.000 studs",
+    "coins": null,
+    "costLabel": "N/A",
     "faction": "Herói",
     "race": "Robô",
     "raceGroup": "Artificial",
-    "locomotion": "Planador",
+    "locomotion": "Voo",
     "power": "Tecnologia",
     "level": 5,
     "sizeRank": 3,
@@ -3336,8 +3334,8 @@ const CHARACTERS = [
     "sourceId": 276,
     "name": "Howard The Duck",
     "file": "Howard The Duck (MSH).png",
-    "coins": 25000,
-    "costLabel": "25.000 studs",
+    "coins": null,
+    "costLabel": "N/A",
     "faction": "Herói",
     "race": "Alienígena",
     "raceGroup": "Extraterrestre",
@@ -3503,7 +3501,7 @@ const CHARACTERS = [
     "faction": "Herói",
     "race": "Mutante",
     "raceGroup": "Terráqueo",
-    "locomotion": "Planador",
+    "locomotion": "Nenhuma",
     "power": "Psíquico",
     "level": 5,
     "sizeRank": 3,
@@ -3534,8 +3532,8 @@ const CHARACTERS = [
     "sourceId": 287,
     "name": "Kingpin Henchman (2)",
     "file": "Kingpin Henchman (2) (MSH).png",
-    "coins": 150000,
-    "costLabel": "150.000 studs",
+    "coins": null,
+    "costLabel": "N/A",
     "faction": "Vilão",
     "race": "Humano",
     "raceGroup": "Terráqueo",
@@ -3624,8 +3622,8 @@ const CHARACTERS = [
     "sourceId": 292,
     "name": "M.O.D.O.K",
     "file": "M.O.D.O.K (MSH).png",
-    "coins": 250000,
-    "costLabel": "250.000 studs",
+    "coins": null,
+    "costLabel": "N/A",
     "faction": "Vilão",
     "race": "Humano",
     "raceGroup": "Terráqueo",
@@ -3642,8 +3640,8 @@ const CHARACTERS = [
     "sourceId": 293,
     "name": "Magneto Acolyte (2)",
     "file": "Magneto Acolyte (2) (MSH).png",
-    "coins": 15000,
-    "costLabel": "15.000 studs",
+    "coins": null,
+    "costLabel": "N/A",
     "faction": "Vilão",
     "race": "Humano",
     "raceGroup": "Terráqueo",
@@ -3719,7 +3717,7 @@ const CHARACTERS = [
     "faction": "Herói",
     "race": "Asgardiano",
     "raceGroup": "Extraterrestre",
-    "locomotion": "Nenhuma",
+    "locomotion": "Voo",
     "power": "Místico",
     "level": 5,
     "sizeRank": 3,
@@ -3737,7 +3735,7 @@ const CHARACTERS = [
     "faction": "Herói",
     "race": "Asgardiano",
     "raceGroup": "Extraterrestre",
-    "locomotion": "Nenhuma",
+    "locomotion": "Voo",
     "power": "Místico",
     "level": 5,
     "sizeRank": 3,
@@ -3840,12 +3838,12 @@ const CHARACTERS = [
     "sourceId": 304,
     "name": "Ronan The Accusor",
     "file": "Ronan The Accusor (MSH).png",
-    "coins": 150000,
-    "costLabel": "150.000 studs",
+    "coins": null,
+    "costLabel": "N/A",
     "faction": "Vilão",
     "race": "Alienígena",
     "raceGroup": "Extraterrestre",
-    "locomotion": "Nenhuma",
+    "locomotion": "Voo",
     "power": "Cósmico",
     "level": 5,
     "sizeRank": 3,
@@ -3912,8 +3910,8 @@ const CHARACTERS = [
     "sourceId": 308,
     "name": "S.H.I.E.L.D Agent",
     "file": "S.H.I.E.L.D Agent (MSH).png",
-    "coins": 150000,
-    "costLabel": "150.000 studs",
+    "coins": null,
+    "costLabel": "N/A",
     "faction": "Herói",
     "race": "Humano",
     "raceGroup": "Terráqueo",
@@ -4061,7 +4059,7 @@ const CHARACTERS = [
     "faction": "Vilão",
     "race": "Robô",
     "raceGroup": "Artificial",
-    "locomotion": "Nenhuma",
+    "locomotion": "Voo",
     "power": "Tecnologia",
     "level": 5,
     "sizeRank": 3,
@@ -4128,8 +4126,8 @@ const CHARACTERS = [
     "sourceId": 320,
     "name": "Star Lord",
     "file": "Star Lord (MSH).png",
-    "coins": 150000,
-    "costLabel": "150.000 studs",
+    "coins": null,
+    "costLabel": "N/A",
     "faction": "Herói",
     "race": "Humano",
     "raceGroup": "Terráqueo",
@@ -4223,7 +4221,7 @@ const CHARACTERS = [
     "faction": "Vilão",
     "race": "Alienígena",
     "raceGroup": "Extraterrestre",
-    "locomotion": "Nenhuma",
+    "locomotion": "Voo",
     "power": "Cósmico",
     "level": 5,
     "sizeRank": 4,
@@ -4236,8 +4234,8 @@ const CHARACTERS = [
     "sourceId": 326,
     "name": "The Wasp",
     "file": "The Wasp (MSH).png",
-    "coins": 150000,
-    "costLabel": "150.000 studs",
+    "coins": null,
+    "costLabel": "N/A",
     "faction": "Herói",
     "race": "Humano",
     "raceGroup": "Terráqueo",
@@ -4339,4 +4337,4 @@ const CHARACTERS = [
     "dlc": null,
     "img": "assets/characters/Wolverine (Skeleton) (MSH).png"
   }
-];
+]
