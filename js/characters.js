@@ -1,4 +1,6 @@
-[
+/* Generated from data/characters.json. Do not edit by hand. */
+
+const CHARACTERS = [
   {
     "id": "002",
     "sourceId": 2,
@@ -32,7 +34,7 @@
     "sizeRank": 3,
     "team": "Fantastic Four",
     "img": "assets/characters/Invisible Woman (MSH).png",
-    "locomotion": "Voo",
+    "locomotion": "Nenhuma",
     "dlc": null
   },
   {
@@ -86,7 +88,7 @@
     "sizeRank": 3,
     "team": "Villains",
     "img": "assets/characters/Green Goblin (MSH).png",
-    "locomotion": "Voo",
+    "locomotion": "Planador",
     "dlc": null
   },
   {
@@ -104,7 +106,7 @@
     "sizeRank": 3,
     "team": "Heróis Marvel",
     "img": "assets/characters/Silver Samurai (MSH).png",
-    "locomotion": "Voo",
+    "locomotion": "Nenhuma",
     "dlc": null
   },
   {
@@ -122,7 +124,7 @@
     "sizeRank": 3,
     "team": "X-Men",
     "img": "assets/characters/Havok (MSH).png",
-    "locomotion": "Voo",
+    "locomotion": "Nenhuma",
     "dlc": null
   },
   {
@@ -212,7 +214,7 @@
     "sizeRank": 3,
     "team": "Civis",
     "img": "assets/characters/Stan Lee (MSH).png",
-    "locomotion": "Nenhuma",
+    "locomotion": "Teia",
     "dlc": null
   },
   {
@@ -230,7 +232,7 @@
     "sizeRank": 4,
     "team": "Avengers",
     "img": "assets/characters/The Hulk (MSH).png",
-    "locomotion": "Voo",
+    "locomotion": "Nenhuma",
     "dlc": null
   },
   {
@@ -266,7 +268,7 @@
     "sizeRank": 3,
     "team": "Guardians",
     "img": "assets/characters/Rocket Raccoon (MSH).png",
-    "locomotion": "Voo",
+    "locomotion": "Nenhuma",
     "dlc": null
   },
   {
@@ -590,7 +592,7 @@
     "sizeRank": 3,
     "team": "Villains",
     "img": "assets/characters/Doctor Doom (MSH).png",
-    "locomotion": "Voo",
+    "locomotion": "Nenhuma",
     "dlc": null
   },
   {
@@ -644,7 +646,7 @@
     "sizeRank": 3,
     "team": "Spider-Verse",
     "img": "assets/characters/Carnage (MSH).png",
-    "locomotion": "Nenhuma",
+    "locomotion": "Teia",
     "dlc": null
   },
   {
@@ -698,7 +700,7 @@
     "sizeRank": 3,
     "team": "Villains",
     "img": "assets/characters/Electro (MSH).png",
-    "locomotion": "Nenhuma",
+    "locomotion": "Planador",
     "dlc": null
   },
   {
@@ -734,7 +736,7 @@
     "sizeRank": 3,
     "team": "Spider-Verse",
     "img": "assets/characters/Venom (MSH).png",
-    "locomotion": "Nenhuma",
+    "locomotion": "Teia",
     "dlc": null
   },
   {
@@ -870,7 +872,7 @@
     "file": "Damage Control (MSH).png",
     "coins": 150000,
     "costLabel": "150.000 studs",
-    "faction": "Vilão",
+    "faction": "Civil",
     "race": "Humano",
     "raceGroup": "Terráqueo",
     "power": "Tecnologia",
@@ -932,7 +934,7 @@
     "sizeRank": 3,
     "team": "X-Men",
     "img": "assets/characters/Professor X (MSH).png",
-    "locomotion": "Voo",
+    "locomotion": "Nenhuma",
     "dlc": null
   },
   {
@@ -1094,7 +1096,7 @@
     "sizeRank": 3,
     "team": "X-Men",
     "img": "assets/characters/Cyclops (MSH).png",
-    "locomotion": "Voo",
+    "locomotion": "Nenhuma",
     "dlc": null
   },
   {
@@ -1112,7 +1114,7 @@
     "sizeRank": 3,
     "team": "Asgardianos",
     "img": "assets/characters/Heimdall (MSH).png",
-    "locomotion": "Voo",
+    "locomotion": "Nenhuma",
     "dlc": null
   },
   {
@@ -1274,7 +1276,7 @@
     "sizeRank": 3,
     "team": "Villains",
     "img": "assets/characters/Dormammu (MSH).png",
-    "locomotion": "Voo",
+    "locomotion": "Nenhuma",
     "dlc": null
   },
   {
@@ -1526,7 +1528,7 @@
     "sizeRank": 3,
     "team": "X-Men",
     "img": "assets/characters/Polaris (MSH).png",
-    "locomotion": "Voo",
+    "locomotion": "Planador",
     "dlc": null
   },
   {
@@ -1580,7 +1582,7 @@
     "sizeRank": 2,
     "team": "Heróis Marvel",
     "img": "assets/characters/Ant-Man (MSH).png",
-    "locomotion": "Voo",
+    "locomotion": "Nenhuma",
     "dlc": null
   },
   {
@@ -1670,7 +1672,7 @@
     "sizeRank": 3,
     "team": "X-Men",
     "img": "assets/characters/Cyclops (Astonishing) (MSH).png",
-    "locomotion": "Voo",
+    "locomotion": "Nenhuma",
     "dlc": null
   },
   {
@@ -1688,7 +1690,7 @@
     "sizeRank": 3,
     "team": "Villains",
     "img": "assets/characters/Loki (MSH).png",
-    "locomotion": "Voo",
+    "locomotion": "Nenhuma",
     "dlc": null
   },
   {
@@ -1706,7 +1708,7 @@
     "sizeRank": 3,
     "team": "Heróis Marvel",
     "img": "assets/characters/Ghost Rider (MSH).png",
-    "locomotion": "Voo",
+    "locomotion": "Moto",
     "dlc": null
   },
   {
@@ -1814,7 +1816,7 @@
     "sizeRank": 2,
     "team": "Fantastic Four",
     "img": "assets/characters/H.E.R.B.I.E (MSH).png",
-    "locomotion": "Voo",
+    "locomotion": "Planador",
     "dlc": null
   },
   {
@@ -1868,7 +1870,7 @@
     "sizeRank": 3,
     "team": "Fantastic Four",
     "img": "assets/characters/Invisible Woman (Future Foundation) (MSH).png",
-    "locomotion": "Voo",
+    "locomotion": "Nenhuma",
     "dlc": null
   },
   {
@@ -1904,7 +1906,7 @@
     "sizeRank": 3,
     "team": "X-Men",
     "img": "assets/characters/Magneto (MSH).png",
-    "locomotion": "Voo",
+    "locomotion": "Planador",
     "dlc": null
   },
   {
@@ -1994,7 +1996,7 @@
     "sizeRank": 3,
     "team": "Avengers",
     "img": "assets/characters/Iron Man (Mark-1) (MSH).png",
-    "locomotion": "Voo",
+    "locomotion": "Planador",
     "dlc": null
   },
   {
@@ -2246,7 +2248,7 @@
     "sizeRank": 3,
     "team": "Villains",
     "img": "assets/characters/Beetle (MSH).png",
-    "locomotion": "Nenhuma",
+    "locomotion": "Voo",
     "dlc": null
   },
   {
@@ -2426,7 +2428,7 @@
     "sizeRank": 3,
     "team": "Villains",
     "img": "assets/characters/Iron Patriot (MSH).png",
-    "locomotion": "Nenhuma",
+    "locomotion": "Voo",
     "dlc": null
   },
   {
@@ -2498,7 +2500,7 @@
     "sizeRank": 4,
     "team": "Avengers",
     "img": "assets/characters/Iron Man (Hulkbuster) (MSH).png",
-    "locomotion": "Voo",
+    "locomotion": "Planador",
     "dlc": null
   },
   {
@@ -2534,7 +2536,7 @@
     "sizeRank": 3,
     "team": "Fantastic Four",
     "img": "assets/characters/Mister Fantastic (MSH).png",
-    "locomotion": "Nenhuma",
+    "locomotion": "Planador",
     "dlc": null
   },
   {
@@ -2552,7 +2554,7 @@
     "sizeRank": 3,
     "team": "X-Men",
     "img": "assets/characters/Iceman (MSH).png",
-    "locomotion": "Nenhuma",
+    "locomotion": "Planador",
     "dlc": null
   },
   {
@@ -2588,7 +2590,7 @@
     "sizeRank": 3,
     "team": "Villains",
     "img": "assets/characters/Electro (Ultimate) (MSH).png",
-    "locomotion": "Nenhuma",
+    "locomotion": "Planador",
     "dlc": null
   },
   {
@@ -2660,7 +2662,7 @@
     "sizeRank": 3,
     "team": "X-Men",
     "img": "assets/characters/Storm (MSH).png",
-    "locomotion": "Voo",
+    "locomotion": "Planador",
     "dlc": null
   },
   {
@@ -2678,7 +2680,7 @@
     "sizeRank": 3,
     "team": "Heróis Marvel",
     "img": "assets/characters/Doctor Strange (MSH).png",
-    "locomotion": "Nenhuma",
+    "locomotion": "Voo",
     "dlc": null
   },
   {
@@ -3249,7 +3251,7 @@
     "faction": "Herói",
     "race": "Robô",
     "raceGroup": "Artificial",
-    "locomotion": "Voo",
+    "locomotion": "Planador",
     "power": "Tecnologia",
     "level": 5,
     "sizeRank": 3,
@@ -3501,7 +3503,7 @@
     "faction": "Herói",
     "race": "Mutante",
     "raceGroup": "Terráqueo",
-    "locomotion": "Nenhuma",
+    "locomotion": "Planador",
     "power": "Psíquico",
     "level": 5,
     "sizeRank": 3,
@@ -3717,7 +3719,7 @@
     "faction": "Herói",
     "race": "Asgardiano",
     "raceGroup": "Extraterrestre",
-    "locomotion": "Voo",
+    "locomotion": "Nenhuma",
     "power": "Místico",
     "level": 5,
     "sizeRank": 3,
@@ -3735,7 +3737,7 @@
     "faction": "Herói",
     "race": "Asgardiano",
     "raceGroup": "Extraterrestre",
-    "locomotion": "Voo",
+    "locomotion": "Nenhuma",
     "power": "Místico",
     "level": 5,
     "sizeRank": 3,
@@ -3843,7 +3845,7 @@
     "faction": "Vilão",
     "race": "Alienígena",
     "raceGroup": "Extraterrestre",
-    "locomotion": "Voo",
+    "locomotion": "Nenhuma",
     "power": "Cósmico",
     "level": 5,
     "sizeRank": 3,
@@ -4059,7 +4061,7 @@
     "faction": "Vilão",
     "race": "Robô",
     "raceGroup": "Artificial",
-    "locomotion": "Voo",
+    "locomotion": "Nenhuma",
     "power": "Tecnologia",
     "level": 5,
     "sizeRank": 3,
@@ -4221,7 +4223,7 @@
     "faction": "Vilão",
     "race": "Alienígena",
     "raceGroup": "Extraterrestre",
-    "locomotion": "Voo",
+    "locomotion": "Nenhuma",
     "power": "Cósmico",
     "level": 5,
     "sizeRank": 4,
@@ -4337,4 +4339,4 @@
     "dlc": null,
     "img": "assets/characters/Wolverine (Skeleton) (MSH).png"
   }
-]
+];
