@@ -39,17 +39,28 @@
   const STORAGE_PREFIX = "legoMarveldle_";
 
   // Categoria de tamanho: as únicas "Big Figs" de LEGO Marvel Super Heroes
-  // são estas oito — o resto do elenco (mesmo os visualmente grandes, como
-  // She-Hulk, Rhino ou o Hulkbuster) joga como minifigura comum.
+  // são estas vinte — o resto do elenco joga como minifigura comum.
   const BIG_FIGS = new Set([
+    "A-Bomb",
     "Abomination",
     "Blob",
     "Colossus",
-    "The Hulk",
-    "Juggernaut",
-    "The Thing",
-    "The Thing (Future Foundation)",
+    "Doombot (V-Series)",
     "Green Goblin (Ultimate)",
+    "Groot",
+    "Iron Man (Hulkbuster)",
+    "Juggernaut",
+    "Kingpin",
+    "Kurse",
+    "Kurse (The Dark World)",
+    "Red Hulk",
+    "Stan Lee (Hulk)",
+    "Thanos",
+    "The Hulk",
+    "The Lizard",
+    "The Rhino",
+    "The Thing",
+    "Venom (Big)",
   ]);
   CHARACTERS.forEach((c) => {
     c.sizeCategory = BIG_FIGS.has(c.name) ? "Fig Grande" : "Fig Pequena";
@@ -60,7 +71,7 @@
     { key: "letter",   label: "Letra",      type: "letter" },
     { key: "faction",  label: "Alinhamento", type: "category" },
     { key: "race",     label: "Raça",       type: "category", groupKey: "raceGroup" },
-    { key: "flight",   label: "Voo",        type: "category" },
+    { key: "locomotion", label: "Locomoção", type: "category" },
     { key: "coins",    label: "Custo (studs)", type: "numeric" },
     { key: "sizeCategory", label: "Tamanho", type: "category" },
   ];
