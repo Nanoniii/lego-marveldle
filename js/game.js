@@ -900,7 +900,7 @@
       persistStats();
     }
 
-    const rowEl = buildRow(character);
+    const rowEl = buildRow(character, activeSecret(), state.guessIds.length);
     boardRows.appendChild(rowEl);
 
     input.value = "";
@@ -1503,8 +1503,8 @@
 
   /* ---------------------------------------------------------------------
      Contagem regressiva até o próximo período de 2h (Desafio e Sombra
-     Diário compartilham o mesmo relógio de reset
-     -------------------------------------------------------------------- */
+     Diário compartilham o mesmo relógio de reset)
+     --------------------------------------------------------------------- */
   const resetCountdownEl = $("#reset-countdown");
   let reloadQueued = false;
 
