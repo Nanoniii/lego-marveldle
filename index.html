@@ -47,13 +47,19 @@
 
 <button type="button" class="mode-indicator" id="mode-indicator">
   <span class="mode-indicator-icon" id="mode-indicator-icon">⏱</span>
-  <span class="mode-indicator-text">MODO: <strong id="mode-indicator-label">DESAFIO 6H</strong></span>
+  <span class="mode-indicator-text">MODO: <strong id="mode-indicator-label">DESAFIO 2H</strong></span>
   <span class="mode-indicator-swap">TROCAR ↻</span>
 </button>
 
 <div class="daily-ribbon" id="challenge-ribbon">
   <span class="issue-badge" id="issue-badge">#1</span>
   <span>DESAFIO ATUAL</span>
+  <span class="ribbon-star">★</span>
+</div>
+
+<div class="daily-ribbon ribbon-shadow-daily hidden" id="shadow-daily-ribbon">
+  <span class="issue-badge" id="issue-badge-shadow">#1</span>
+  <span>SOMBRA DIÁRIO</span>
   <span class="ribbon-star">★</span>
 </div>
 
@@ -65,13 +71,25 @@
 
 <div class="daily-ribbon ribbon-shadow hidden" id="shadow-ribbon">
   <span class="issue-badge">🌑</span>
-  <span>MODO SOMBRA</span>
+  <span>SOMBRA PRÁTICA</span>
   <span class="ribbon-star">★</span>
 </div>
 
-<div class="reset-chip" id="reset-chip" title="Um novo personagem secreto é sorteado a cada 6 horas, ao mesmo tempo para todo mundo">
+<div class="daily-ribbon ribbon-duo hidden" id="duo-ribbon">
+  <span class="issue-badge" id="issue-badge-duo">#1</span>
+  <span>DUO</span>
+  <span class="ribbon-star">★</span>
+</div>
+
+<div class="daily-ribbon ribbon-team hidden" id="team-ribbon">
+  <span class="issue-badge" id="issue-badge-team">#1</span>
+  <span>TEAM</span>
+  <span class="ribbon-star">★</span>
+</div>
+
+<div class="reset-chip" id="reset-chip" title="Um novo personagem secreto é sorteado a cada 2 horas, ao mesmo tempo para todo mundo">
   <span class="reset-icon" aria-hidden="true">⏱</span>
-  <span class="reset-text">PRÓXIMO DESAFIO EM <strong id="reset-countdown">--:--:--</strong></span>
+  <span class="reset-text"><span id="reset-label">PRÓXIMO DESAFIO EM</span> <strong id="reset-countdown">--:--:--</strong></span>
 </div>
 
 <div class="practice-chip hidden" id="free-chip">
@@ -92,7 +110,7 @@
   <div class="tagline comic-bubble">
     <span class="bubble-kicker">ATENÇÃO, HERÓI!</span>
     <strong>Adivinhe o personagem secreto de LEGO Marvel Super Heroes.</strong>
-    <span id="tagline-detail">8 tentativas • 1 personagem • pistas em cada palpite</span>
+    <span id="tagline-detail">8 tentativas • 1 personagem • muda a cada 2h • conta pras estatísticas</span>
   </div>
 
   <section class="guess-box">
@@ -122,12 +140,14 @@
     </div>
   </section>
 
-  <section class="board-wrap">
+  <section class="board-wrap" id="board-wrap">
     <div class="board-scroll">
       <div class="board-header" id="board-header"></div>
       <div class="board-rows" id="board-rows"></div>
     </div>
   </section>
+
+  <div class="multi-board-wrap hidden" id="multi-board-wrap"></div>
 
   <p class="hint-legend">
     <span class="chip chip-correct">Verde</span> = acertou &nbsp;
@@ -152,8 +172,15 @@
       <button type="button" class="mode-card mode-card-challenge" data-mode="challenge">
         <span class="mode-card-icon">⏱</span>
         <span class="mode-card-text">
-          <strong>Desafio 6h</strong>
-          <small>O mesmo personagem pra todo mundo — muda a cada 6 horas</small>
+          <strong>Desafio 2h</strong>
+          <small>O mesmo personagem pra todo mundo — muda a cada 2 horas. Conta pras estatísticas, galeria e conquistas.</small>
+        </span>
+      </button>
+      <button type="button" class="mode-card mode-card-shadow-daily" data-mode="shadowDaily">
+        <span class="mode-card-icon">🌘</span>
+        <span class="mode-card-text">
+          <strong>Sombra diário</strong>
+          <small>Igual ao Desafio (muda a cada 2 horas, mesmo pra todo mundo), mas com a silhueta borrada como pista extra</small>
         </span>
       </button>
       <button type="button" class="mode-card mode-card-practice" data-mode="practice">
@@ -163,11 +190,25 @@
           <small>Personagem aleatório, sem limite de tentativas</small>
         </span>
       </button>
-      <button type="button" class="mode-card mode-card-shadow" data-mode="shadow">
+      <button type="button" class="mode-card mode-card-shadow" data-mode="shadowPractice">
         <span class="mode-card-icon">🌑</span>
         <span class="mode-card-text">
-          <strong>Sombra</strong>
-          <small>Adivinhe a partir da versão borrada do segredo</small>
+          <strong>Sombra prática</strong>
+          <small>Personagem aleatório com a silhueta borrada como pista extra</small>
+        </span>
+      </button>
+      <button type="button" class="mode-card mode-card-duo" data-mode="duo">
+        <span class="mode-card-icon">👥</span>
+        <span class="mode-card-text">
+          <strong>Duo</strong>
+          <small>Dois personagens secretos ao mesmo tempo — cada palpite vale nos dois, 10 tentativas</small>
+        </span>
+      </button>
+      <button type="button" class="mode-card mode-card-team" data-mode="team">
+        <span class="mode-card-icon">🛡</span>
+        <span class="mode-card-text">
+          <strong>Team</strong>
+          <small>Quatro personagens secretos ao mesmo tempo — cada palpite vale nos quatro, 12 tentativas</small>
         </span>
       </button>
     </div>
@@ -192,7 +233,11 @@
     <ul class="help-list help-list-modes">
       <li>
         <span class="mode-dot mode-dot-challenge">⏱</span>
-        <span><strong>Desafio 6h</strong> — todo mundo recebe o mesmo personagem secreto. Ele muda automaticamente a cada <strong>6 horas</strong>, ao mesmo tempo para todo mundo, e cada rodada vale <strong>8 tentativas</strong>. É esse modo que conta para as suas estatísticas e para a sequência de vitórias.</span>
+        <span><strong>Desafio 2h</strong> — todo mundo recebe o mesmo personagem secreto. Ele muda automaticamente a cada <strong>2 horas</strong> (00h, 02h, 04h... sempre em horário UTC), ao mesmo tempo para todo mundo, e cada rodada vale <strong>8 tentativas</strong>. É o único modo que conta para as suas <strong>estatísticas</strong>, sua <strong>galeria</strong> e suas <strong>conquistas</strong>.</span>
+      </li>
+      <li>
+        <span class="mode-dot mode-dot-shadow-daily">🌘</span>
+        <span><strong>Sombra diário</strong> — funciona igual ao Desafio (muda a cada 2 horas, mesmo personagem pra todo mundo, 8 tentativas), mas normalmente sorteia um personagem <em>diferente</em> do Desafio, e mostra a silhueta <strong>borrada</strong> do segredo como pista extra. Não altera estatísticas, galeria nem conquistas.</span>
       </li>
       <li>
         <span class="mode-dot mode-dot-practice">🎲</span>
@@ -200,22 +245,35 @@
       </li>
       <li>
         <span class="mode-dot mode-dot-shadow">🌑</span>
-        <span><strong>Sombra</strong> — igual à Prática (personagem aleatório, tentativas livres), mas o personagem secreto aparece <strong>borrado</strong> acima do tabuleiro — uma pista visual a mais.</span>
+        <span><strong>Sombra prática</strong> — igual à Prática (personagem aleatório, tentativas livres), mas o personagem secreto aparece <strong>borrado</strong> acima do tabuleiro — uma pista visual a mais.</span>
+      </li>
+      <li>
+        <span class="mode-dot mode-dot-duo">👥</span>
+        <span><strong>Duo</strong> — dois personagens secretos ao mesmo tempo, um em cada tabuleiro. Cada palpite vale nos dois tabuleiros ainda abertos; ao acertar um, ele congela e você continua atrás do outro. <strong>10 tentativas</strong> no total, mesmo período de 2h do Desafio. Não altera estatísticas, galeria nem conquistas.</span>
+      </li>
+      <li>
+        <span class="mode-dot mode-dot-team">🛡</span>
+        <span><strong>Team</strong> — igual ao Duo, mas com <strong>quatro</strong> personagens secretos ao mesmo tempo e <strong>12 tentativas</strong> no total. Também não altera estatísticas, galeria nem conquistas.</span>
       </li>
     </ul>
 
     <h3>O que significa cada categoria</h3>
     <ul class="help-list help-list-categories">
       <li><strong>Personagem</strong> — a foto do palpite (pode ser escondida nas Configurações).</li>
-      <li><strong>Letra</strong> — a primeira letra do nome do personagem. A seta indica se a letra do segredo vem depois (↑) ou antes (↓) da letra do seu palpite, em ordem alfabética.</li>
+      <li><strong>1ª Letra</strong> — a primeira letra do nome do personagem. A seta indica se a letra do segredo vem depois (↑) ou antes (↓) da letra do seu palpite, em ordem alfabética.</li>
+      <li><strong>Última Letra</strong> — a última letra do nome do personagem (ignorando um sufixo entre parênteses, tipo "(Mark-7)"). Mesma lógica de seta da 1ª Letra.</li>
       <li><strong>Alinhamento</strong> — se o personagem é do lado dos Heróis ou dos Vilões.</li>
+      <li><strong>Time</strong> — o grupo/facção do personagem (Vingadores, X-Men, Vilões do Homem-Aranha, Vilões do Homem de Ferro, Quarteto Fantástico, Guardiões da Galáxia, Asgardianos, S.H.I.E.L.D., Illuminati, Capangas — tropas/figurantes genéricos sem vilão próprio — e outros).</li>
       <li><strong>Raça</strong> — a espécie/origem do personagem (Humano, Mutante, Inumano, Robô, Asgardiano, Alienígena, etc.). Fica <span class="dot dot-partial" style="vertical-align:middle"></span> amarelo quando a raça é diferente mas pertence ao mesmo grande grupo do segredo.</li>
       <li><strong>Locomoção</strong> — como o personagem se desloca (Voo, Teia, Nenhuma, etc).</li>
       <li><strong>Custo (studs)</strong> — quanto custa desbloquear o personagem na loja do jogo, em studs (a "moeda" do jogo).</li>
       <li><strong>Tamanho</strong> — se o personagem é uma minifigura comum (<strong>Fig Pequena</strong>) ou uma das 20 Big Figs do jogo (<strong>Fig Grande</strong>): A-Bomb, Abominação, Blob, Colossus, Doombot (V-Series), Duende Verde (Ultimate), Groot, Homem de Ferro (Hulkbuster), Juggernaut, Rei do Crime, Kurse, Kurse (The Dark World), Hulk Vermelho, Stan Lee (Hulk), Thanos, Hulk, Lagarto, Rhino, Coisa e Venom (Big).</li>
     </ul>
 
-    <p class="muted">No modo Desafio, ninguém escolhe ou escreve a resposta com antecedência: o personagem é sorteado por uma fórmula matemática a partir da hora atual, e todo mundo que jogar no mesmo período de 6 horas recebe o mesmo desafio.</p>
+    <h3>Estatísticas, galeria e conquistas</h3>
+    <p>Só o <strong>Desafio 2h</strong> alimenta as suas Estatísticas, a sua Galeria e as Conquistas — os outros três modos são só pra jogar à vontade, sem contar ponto. Sua <strong>Galeria</strong> (acessível pelas Estatísticas) é um almanaque local que guarda a foto de cada personagem que você já venceu no Desafio, e quantas vezes você já venceu cada um. As <strong>Conquistas</strong> desbloqueiam conforme você joga o Desafio — dá uma olhada na aba de Estatísticas para ver quais faltam.</p>
+
+    <p class="muted">No modo Desafio, ninguém escolhe ou escreve a resposta com antecedência: o personagem é sorteado por uma fórmula matemática a partir da hora atual, e todo mundo que jogar no mesmo período de 2 horas recebe o mesmo desafio.</p>
   </div>
 </div>
 
@@ -240,16 +298,59 @@
   <div class="modal" role="dialog" aria-modal="true" aria-labelledby="stats-title">
     <button class="modal-close" data-close="modal-stats" aria-label="Fechar">✕</button>
     <h2 id="stats-title">Estatísticas</h2>
-    <p class="muted small hidden" id="stats-practice-note">Estatísticas do modo <strong>Desafio 6h</strong> — o modo Prática não conta pontos.</p>
-    <div class="stats-grid">
-      <div class="stat"><span class="stat-num" id="stat-played">0</span><span class="stat-label">Jogos</span></div>
-      <div class="stat"><span class="stat-num" id="stat-winrate">0%</span><span class="stat-label">Vitórias</span></div>
-      <div class="stat"><span class="stat-num" id="stat-streak">0</span><span class="stat-label">Sequência</span></div>
+    <p class="muted small">Estatísticas do modo <strong>Desafio 2h</strong> — os outros modos não contam pontos.</p>
+    <div class="stats-grid stats-grid-3">
+      <div class="stat"><span class="stat-num" id="stat-played">0</span><span class="stat-label">Partidas</span></div>
+      <div class="stat"><span class="stat-num" id="stat-wins">0</span><span class="stat-label">Vitórias</span></div>
+      <div class="stat"><span class="stat-num" id="stat-winrate">0%</span><span class="stat-label">Taxa de acerto</span></div>
+      <div class="stat"><span class="stat-num" id="stat-avg-tries">—</span><span class="stat-label">Média de tentativas</span></div>
       <div class="stat"><span class="stat-num" id="stat-max-streak">0</span><span class="stat-label">Melhor sequência</span></div>
+      <div class="stat"><span class="stat-num" id="stat-oneshot">0</span><span class="stat-label">Acertos em 1 tentativa</span></div>
+      <div class="stat"><span class="stat-num" id="stat-discovered">0 / 0</span><span class="stat-label">Personagens descobertos</span></div>
+      <div class="stat"><span class="stat-num" id="stat-heroes">0 / 0</span><span class="stat-label">Heróis descobertos</span></div>
+      <div class="stat"><span class="stat-num" id="stat-villains">0 / 0</span><span class="stat-label">Vilões descobertos</span></div>
     </div>
+
+    <div class="hardest-card hidden" id="hardest-card">
+      <span class="hardest-label">SEU PERSONAGEM MAIS DIFÍCIL</span>
+      <div class="hardest-body">
+        <img id="hardest-img" src="" alt="">
+        <div class="hardest-info">
+          <strong id="hardest-name">—</strong>
+          <span id="hardest-tries">0 tentativas</span>
+        </div>
+      </div>
+    </div>
+
     <h3 class="dist-title">Distribuição de tentativas</h3>
     <div id="dist-chart" class="dist-chart"></div>
+
+    <div class="stats-links">
+      <button type="button" class="ghost-btn" id="btn-open-gallery">🖼 Ver galeria</button>
+      <button type="button" class="ghost-btn" id="btn-open-achievements">🏆 Ver conquistas</button>
+    </div>
+
     <button type="button" id="btn-share" class="share-btn hidden">Compartilhar resultado</button>
+  </div>
+</div>
+
+<!-- Modal: Galeria (almanaque de personagens vencidos no Desafio 2h) -->
+<div class="modal-overlay hidden" id="modal-gallery">
+  <div class="modal gallery-modal" role="dialog" aria-modal="true" aria-labelledby="gallery-title">
+    <button class="modal-close" data-close="modal-gallery" aria-label="Fechar">✕</button>
+    <h2 id="gallery-title">Galeria</h2>
+    <p class="muted small">Personagens que você já descobriu no <strong>Desafio 2h</strong>: <strong id="gallery-count">0 / 0</strong></p>
+    <div class="gallery-grid" id="gallery-grid"></div>
+  </div>
+</div>
+
+<!-- Modal: Conquistas -->
+<div class="modal-overlay hidden" id="modal-achievements">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="achievements-title">
+    <button class="modal-close" data-close="modal-achievements" aria-label="Fechar">✕</button>
+    <h2 id="achievements-title">Conquistas</h2>
+    <p class="muted small"><strong id="achievements-count">0 / 0</strong> desbloqueadas</p>
+    <div id="achievements-list" class="achievements-list"></div>
   </div>
 </div>
 
@@ -263,7 +364,7 @@
   </div>
 </div>
 
-<script src="js/characters.js?v=7"></script>
-<script src="js/game.js?v=7"></script>
+<script src="js/characters.js?v=9"></script>
+<script src="js/game.js?v=9"></script>
 </body>
 </html>
