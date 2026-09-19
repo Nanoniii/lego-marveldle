@@ -14,7 +14,7 @@ const CHARACTERS = [
     "power": "Psíquico",
     "level": 7,
     "sizeRank": 3,
-    "team": "Fantastic Four",
+    "team": "Quarteto Fantástico",
     "img": "assets/characters/Mister Fantastic (Future Foundation) (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -32,7 +32,7 @@ const CHARACTERS = [
     "power": "Psíquico",
     "level": 5,
     "sizeRank": 3,
-    "team": "Fantastic Four",
+    "team": "Quarteto Fantástico",
     "img": "assets/characters/Invisible Woman (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -86,7 +86,7 @@ const CHARACTERS = [
     "power": "Transformação",
     "level": 5,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões do Homem-Aranha",
     "img": "assets/characters/Green Goblin (MSH).png",
     "locomotion": "Planador",
     "dlc": null
@@ -194,7 +194,7 @@ const CHARACTERS = [
     "power": "Tecnologia",
     "level": 7,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões do Homem-Aranha",
     "img": "assets/characters/Symbiote Scientist (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -230,7 +230,7 @@ const CHARACTERS = [
     "power": "Força",
     "level": 6,
     "sizeRank": 4,
-    "team": "Avengers",
+    "team": "Vingadores",
     "img": "assets/characters/The Hulk (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -266,7 +266,7 @@ const CHARACTERS = [
     "power": "Cósmico",
     "level": 7,
     "sizeRank": 3,
-    "team": "Guardians",
+    "team": "Guardiões da Galáxia",
     "img": "assets/characters/Rocket Raccoon (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -284,7 +284,7 @@ const CHARACTERS = [
     "power": "Místico",
     "level": 6,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões do Homem de Ferro",
     "img": "assets/characters/The Mandarin (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -302,7 +302,7 @@ const CHARACTERS = [
     "power": "Tecnologia",
     "level": 8,
     "sizeRank": 4,
-    "team": "Heróis Marvel",
+    "team": "Vilões do Quarteto Fantástico",
     "img": "assets/characters/Doombot (V-Series) (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -338,7 +338,7 @@ const CHARACTERS = [
     "power": "Força",
     "level": 9,
     "sizeRank": 4,
-    "team": "Villains",
+    "team": "Vilões do Homem-Aranha",
     "img": "assets/characters/The Rhino (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -356,7 +356,7 @@ const CHARACTERS = [
     "power": "Força",
     "level": 7,
     "sizeRank": 3,
-    "team": "Guardians",
+    "team": "Guardiões da Galáxia",
     "img": "assets/characters/Drax (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -374,7 +374,7 @@ const CHARACTERS = [
     "power": "Místico",
     "level": 9,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões Cósmicos e Místicos",
     "img": "assets/characters/Nightmare (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -392,7 +392,7 @@ const CHARACTERS = [
     "power": "Energia",
     "level": 5,
     "sizeRank": 3,
-    "team": "Avengers",
+    "team": "Vingadores",
     "img": "assets/characters/Iron Man (Mark-6) (MSH).png",
     "locomotion": "Voo",
     "dlc": null
@@ -410,7 +410,7 @@ const CHARACTERS = [
     "power": "Energia",
     "level": 5,
     "sizeRank": 3,
-    "team": "Fantastic Four",
+    "team": "Quarteto Fantástico",
     "img": "assets/characters/Human Torch (MSH).png",
     "locomotion": "Voo",
     "dlc": null
@@ -428,7 +428,7 @@ const CHARACTERS = [
     "power": "Cósmico",
     "level": 7,
     "sizeRank": 3,
-    "team": "Guardians",
+    "team": "Guardiões da Galáxia",
     "img": "assets/characters/Gamora (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -482,7 +482,7 @@ const CHARACTERS = [
     "power": "Transformação",
     "level": 8,
     "sizeRank": 4,
-    "team": "Villains",
+    "team": "Vilões do Homem-Aranha",
     "img": "assets/characters/Green Goblin (Ultimate) (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -500,7 +500,7 @@ const CHARACTERS = [
     "power": "Tecnologia",
     "level": 7,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões do Homem de Ferro",
     "img": "assets/characters/Whiplash (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -536,7 +536,7 @@ const CHARACTERS = [
     "power": "Habilidade",
     "level": 8,
     "sizeRank": 3,
-    "team": "Civis",
+    "team": "Vilões do Homem-Aranha",
     "img": "assets/characters/Curt Connors (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -554,7 +554,7 @@ const CHARACTERS = [
     "power": "Energia",
     "level": 8,
     "sizeRank": 3,
-    "team": "Avengers",
+    "team": "Vingadores",
     "img": "assets/characters/Iron Man (Heroic Age) (MSH).png",
     "locomotion": "Voo",
     "dlc": null
@@ -572,7 +572,7 @@ const CHARACTERS = [
     "power": "Habilidade",
     "level": 7,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões do Homem-Aranha",
     "img": "assets/characters/Doctor Octopus (Ultimate) (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -590,7 +590,7 @@ const CHARACTERS = [
     "power": "Místico",
     "level": 6,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões do Quarteto Fantástico",
     "img": "assets/characters/Doctor Doom (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -608,7 +608,7 @@ const CHARACTERS = [
     "power": "Força",
     "level": 8,
     "sizeRank": 4,
-    "team": "Avengers",
+    "team": "Vingadores",
     "img": "assets/characters/Red Hulk (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -644,7 +644,7 @@ const CHARACTERS = [
     "power": "Habilidade",
     "level": 7,
     "sizeRank": 3,
-    "team": "Spider-Verse",
+    "team": "Vilões do Homem-Aranha",
     "img": "assets/characters/Carnage (MSH).png",
     "locomotion": "Teia",
     "dlc": null
@@ -698,7 +698,7 @@ const CHARACTERS = [
     "power": "Energia",
     "level": 7,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões do Homem-Aranha",
     "img": "assets/characters/Electro (MSH).png",
     "locomotion": "Planador",
     "dlc": null
@@ -716,7 +716,7 @@ const CHARACTERS = [
     "power": "Habilidade",
     "level": 7,
     "sizeRank": 4,
-    "team": "Villains",
+    "team": "Vilões do Demolidor",
     "img": "assets/characters/Kingpin (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -734,7 +734,7 @@ const CHARACTERS = [
     "power": "Habilidade",
     "level": 5,
     "sizeRank": 3,
-    "team": "Spider-Verse",
+    "team": "Vilões do Homem-Aranha",
     "img": "assets/characters/Venom (MSH).png",
     "locomotion": "Teia",
     "dlc": null
@@ -770,7 +770,7 @@ const CHARACTERS = [
     "power": "Força",
     "level": 9,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões de Asgard",
     "img": "assets/characters/Frost Giant (3) (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -788,7 +788,7 @@ const CHARACTERS = [
     "power": "Habilidade",
     "level": 5,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões do Homem-Aranha",
     "img": "assets/characters/Doctor Octopus (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -824,7 +824,7 @@ const CHARACTERS = [
     "power": "Força",
     "level": 5,
     "sizeRank": 4,
-    "team": "Spider-Verse",
+    "team": "Vilões do Homem-Aranha",
     "img": "assets/characters/Venom (Big) (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -872,13 +872,13 @@ const CHARACTERS = [
     "file": "Damage Control (MSH).png",
     "coins": 150000,
     "costLabel": "150.000 studs",
-    "faction": "Civil",
+    "faction": "Herói",
     "race": "Humano",
     "raceGroup": "Terráqueo",
     "power": "Tecnologia",
     "level": 7,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Civis",
     "img": "assets/characters/Damage Control (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -896,7 +896,7 @@ const CHARACTERS = [
     "power": "Energia",
     "level": 7,
     "sizeRank": 3,
-    "team": "X-Men",
+    "team": "Vilões dos X-Men",
     "img": "assets/characters/Pyro (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -914,7 +914,7 @@ const CHARACTERS = [
     "power": "Furtividade",
     "level": 5,
     "sizeRank": 3,
-    "team": "Avengers",
+    "team": "Vingadores",
     "img": "assets/characters/Black Widow (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -968,7 +968,7 @@ const CHARACTERS = [
     "power": "Habilidade",
     "level": 7,
     "sizeRank": 3,
-    "team": "Heróis Marvel",
+    "team": "Illuminati",
     "img": "assets/characters/Black Panther (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -986,7 +986,7 @@ const CHARACTERS = [
     "power": "Tecnologia",
     "level": 7,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões do Homem-Aranha",
     "img": "assets/characters/Symbiote Scientist (Hazmat) (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -1004,7 +1004,7 @@ const CHARACTERS = [
     "power": "Transformação",
     "level": 8,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões do Homem-Aranha",
     "img": "assets/characters/Sandman (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -1022,7 +1022,7 @@ const CHARACTERS = [
     "power": "Combate",
     "level": 5,
     "sizeRank": 3,
-    "team": "Avengers",
+    "team": "Vingadores",
     "img": "assets/characters/Captain America (Classic) (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -1040,7 +1040,7 @@ const CHARACTERS = [
     "power": "Energia",
     "level": 8,
     "sizeRank": 3,
-    "team": "Avengers",
+    "team": "Vingadores",
     "img": "assets/characters/Thor (Classic) (MSH).png",
     "locomotion": "Voo",
     "dlc": null
@@ -1058,7 +1058,7 @@ const CHARACTERS = [
     "power": "Habilidade",
     "level": 8,
     "sizeRank": 3,
-    "team": "Avengers",
+    "team": "Vingadores",
     "img": "assets/characters/Ms. Marvel (MSH).png",
     "locomotion": "Voo",
     "dlc": null
@@ -1076,7 +1076,7 @@ const CHARACTERS = [
     "power": "Energia",
     "level": 5,
     "sizeRank": 3,
-    "team": "Avengers",
+    "team": "Vingadores",
     "img": "assets/characters/War Machine (MSH).png",
     "locomotion": "Voo",
     "dlc": null
@@ -1148,7 +1148,7 @@ const CHARACTERS = [
     "power": "Transformação",
     "level": 7,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões do Homem-Aranha",
     "img": "assets/characters/The Vulture (MSH).png",
     "locomotion": "Voo",
     "dlc": null
@@ -1184,7 +1184,7 @@ const CHARACTERS = [
     "power": "Místico",
     "level": 5,
     "sizeRank": 3,
-    "team": "X-Men",
+    "team": "Vilões dos X-Men",
     "img": "assets/characters/Mystique (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -1202,7 +1202,7 @@ const CHARACTERS = [
     "power": "Místico",
     "level": 7,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões do Homem de Ferro",
     "img": "assets/characters/The Mandarin (Film) (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -1220,7 +1220,7 @@ const CHARACTERS = [
     "power": "Energia",
     "level": 6,
     "sizeRank": 3,
-    "team": "Avengers",
+    "team": "Vingadores",
     "img": "assets/characters/Thor (MSH).png",
     "locomotion": "Voo",
     "dlc": null
@@ -1238,7 +1238,7 @@ const CHARACTERS = [
     "power": "Habilidade",
     "level": 9,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões de Asgard",
     "img": "assets/characters/Destroyer (Minifig) (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -1274,7 +1274,7 @@ const CHARACTERS = [
     "power": "Místico",
     "level": 6,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões Cósmicos e Místicos",
     "img": "assets/characters/Dormammu (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -1310,7 +1310,7 @@ const CHARACTERS = [
     "power": "Tecnologia",
     "level": 7,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões do Demolidor",
     "img": "assets/characters/Taskmaster (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -1328,7 +1328,7 @@ const CHARACTERS = [
     "power": "Energia",
     "level": 5,
     "sizeRank": 3,
-    "team": "Avengers",
+    "team": "Vingadores",
     "img": "assets/characters/Iron Man (Mark-7) (MSH).png",
     "locomotion": "Voo",
     "dlc": null
@@ -1346,7 +1346,7 @@ const CHARACTERS = [
     "power": "Combate",
     "level": 5,
     "sizeRank": 3,
-    "team": "Avengers",
+    "team": "Vingadores",
     "img": "assets/characters/Hawkeye (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -1364,7 +1364,7 @@ const CHARACTERS = [
     "power": "Energia",
     "level": 7,
     "sizeRank": 3,
-    "team": "Avengers",
+    "team": "Vingadores",
     "img": "assets/characters/Rescue (MSH).png",
     "locomotion": "Voo",
     "dlc": null
@@ -1400,7 +1400,7 @@ const CHARACTERS = [
     "power": "Energia",
     "level": 5,
     "sizeRank": 3,
-    "team": "Avengers",
+    "team": "Vingadores",
     "img": "assets/characters/Iron Man (Mark-42) (MSH).png",
     "locomotion": "Voo",
     "dlc": null
@@ -1418,7 +1418,7 @@ const CHARACTERS = [
     "power": "Força",
     "level": 7,
     "sizeRank": 3,
-    "team": "Avengers",
+    "team": "Vingadores",
     "img": "assets/characters/She-Hulk (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -1454,7 +1454,7 @@ const CHARACTERS = [
     "power": "Energia",
     "level": 7,
     "sizeRank": 3,
-    "team": "Avengers",
+    "team": "Vingadores",
     "img": "assets/characters/Iron Man (Heartbreaker) (MSH).png",
     "locomotion": "Voo",
     "dlc": null
@@ -1472,7 +1472,7 @@ const CHARACTERS = [
     "power": "Combate",
     "level": 7,
     "sizeRank": 3,
-    "team": "Spider-Verse",
+    "team": "Aranhaverso",
     "img": "assets/characters/Spider-Man (Future Foundation) (MSH).png",
     "locomotion": "Teia",
     "dlc": null
@@ -1490,7 +1490,7 @@ const CHARACTERS = [
     "power": "Energia",
     "level": 7,
     "sizeRank": 3,
-    "team": "Guardians",
+    "team": "Guardiões da Galáxia",
     "img": "assets/characters/Nova (MSH).png",
     "locomotion": "Voo",
     "dlc": null
@@ -1562,7 +1562,7 @@ const CHARACTERS = [
     "power": "Habilidade",
     "level": 7,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões do Capitão América",
     "img": "assets/characters/Viper (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -1580,7 +1580,7 @@ const CHARACTERS = [
     "power": "Habilidade",
     "level": 7,
     "sizeRank": 2,
-    "team": "Heróis Marvel",
+    "team": "Vingadores",
     "img": "assets/characters/Ant-Man (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -1598,7 +1598,7 @@ const CHARACTERS = [
     "power": "Força",
     "level": 9,
     "sizeRank": 3,
-    "team": "Fantastic Four",
+    "team": "Quarteto Fantástico",
     "img": "assets/characters/The Thing (Future Foundation) (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -1634,7 +1634,7 @@ const CHARACTERS = [
     "power": "Força",
     "level": 9,
     "sizeRank": 4,
-    "team": "X-Men",
+    "team": "Vilões dos X-Men",
     "img": "assets/characters/Blob (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -1652,7 +1652,7 @@ const CHARACTERS = [
     "power": "Psíquico",
     "level": 9,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões dos X-Men",
     "img": "assets/characters/Mastermind (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -1688,7 +1688,7 @@ const CHARACTERS = [
     "power": "Místico",
     "level": 5,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões de Asgard",
     "img": "assets/characters/Loki (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -1742,7 +1742,7 @@ const CHARACTERS = [
     "power": "Força",
     "level": 7,
     "sizeRank": 4,
-    "team": "Villains",
+    "team": "Vilões de Asgard",
     "img": "assets/characters/Kurse (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -1778,7 +1778,7 @@ const CHARACTERS = [
     "power": "Força",
     "level": 5,
     "sizeRank": 4,
-    "team": "Fantastic Four",
+    "team": "Quarteto Fantástico",
     "img": "assets/characters/The Thing (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -1796,7 +1796,7 @@ const CHARACTERS = [
     "power": "Força",
     "level": 9,
     "sizeRank": 4,
-    "team": "Villains",
+    "team": "Vilões do Hulk",
     "img": "assets/characters/Abomination (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -1814,7 +1814,7 @@ const CHARACTERS = [
     "power": "Tecnologia",
     "level": 8,
     "sizeRank": 2,
-    "team": "Fantastic Four",
+    "team": "Quarteto Fantástico",
     "img": "assets/characters/H.E.R.B.I.E (MSH).png",
     "locomotion": "Planador",
     "dlc": null
@@ -1850,7 +1850,7 @@ const CHARACTERS = [
     "power": "Tecnologia",
     "level": 9,
     "sizeRank": 2,
-    "team": "Villains",
+    "team": "Vilões do Quarteto Fantástico",
     "img": "assets/characters/Doombot (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -1868,7 +1868,7 @@ const CHARACTERS = [
     "power": "Psíquico",
     "level": 8,
     "sizeRank": 3,
-    "team": "Fantastic Four",
+    "team": "Quarteto Fantástico",
     "img": "assets/characters/Invisible Woman (Future Foundation) (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -1886,7 +1886,7 @@ const CHARACTERS = [
     "power": "Força",
     "level": 9,
     "sizeRank": 3,
-    "team": "X-Men",
+    "team": "Vilões dos X-Men",
     "img": "assets/characters/Sabretooth (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -1904,7 +1904,7 @@ const CHARACTERS = [
     "power": "Energia",
     "level": 8,
     "sizeRank": 3,
-    "team": "X-Men",
+    "team": "Vilões dos X-Men",
     "img": "assets/characters/Magneto (MSH).png",
     "locomotion": "Planador",
     "dlc": null
@@ -1958,7 +1958,7 @@ const CHARACTERS = [
     "power": "Tecnologia",
     "level": 8,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões do Capitão América",
     "img": "assets/characters/Arnim Zola (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -1976,7 +1976,7 @@ const CHARACTERS = [
     "power": "Força",
     "level": 9,
     "sizeRank": 4,
-    "team": "X-Men",
+    "team": "Vilões dos X-Men",
     "img": "assets/characters/Juggernaut (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -1994,7 +1994,7 @@ const CHARACTERS = [
     "power": "Energia",
     "level": 5,
     "sizeRank": 3,
-    "team": "Avengers",
+    "team": "Vingadores",
     "img": "assets/characters/Iron Man (Mark-1) (MSH).png",
     "locomotion": "Planador",
     "dlc": null
@@ -2012,7 +2012,7 @@ const CHARACTERS = [
     "power": "Força",
     "level": 9,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões de Asgard",
     "img": "assets/characters/Frost Giant (2) (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -2030,7 +2030,7 @@ const CHARACTERS = [
     "power": "Tecnologia",
     "level": 7,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões do Homem-Aranha",
     "img": "assets/characters/Shocker (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -2048,7 +2048,7 @@ const CHARACTERS = [
     "power": "Força",
     "level": 9,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões de Asgard",
     "img": "assets/characters/Frost Giant (1) (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -2084,7 +2084,7 @@ const CHARACTERS = [
     "power": "Habilidade",
     "level": 7,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões do Homem de Ferro",
     "img": "assets/characters/Aldrich Killian (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -2102,7 +2102,7 @@ const CHARACTERS = [
     "power": "Transformação",
     "level": 7,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões do Homem-Aranha",
     "img": "assets/characters/Mysterio (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -2120,7 +2120,7 @@ const CHARACTERS = [
     "power": "Furtividade",
     "level": 7,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões do Demolidor",
     "img": "assets/characters/Elektra (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -2138,7 +2138,7 @@ const CHARACTERS = [
     "power": "Transformação",
     "level": 5,
     "sizeRank": 4,
-    "team": "Villains",
+    "team": "Vilões do Homem-Aranha",
     "img": "assets/characters/The Lizard (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -2192,7 +2192,7 @@ const CHARACTERS = [
     "power": "Força",
     "level": 7,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões do Hulk",
     "img": "assets/characters/Absorbing Man (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -2246,7 +2246,7 @@ const CHARACTERS = [
     "power": "Tecnologia",
     "level": 7,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões do Homem-Aranha",
     "img": "assets/characters/Beetle (MSH).png",
     "locomotion": "Voo",
     "dlc": null
@@ -2264,7 +2264,7 @@ const CHARACTERS = [
     "power": "Cósmico",
     "level": 7,
     "sizeRank": 4,
-    "team": "Guardians",
+    "team": "Guardiões da Galáxia",
     "img": "assets/characters/Groot (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -2300,7 +2300,7 @@ const CHARACTERS = [
     "power": "Combate",
     "level": 5,
     "sizeRank": 3,
-    "team": "Avengers",
+    "team": "Vingadores",
     "img": "assets/characters/Captain America (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -2318,7 +2318,7 @@ const CHARACTERS = [
     "power": "Combate",
     "level": 5,
     "sizeRank": 3,
-    "team": "Spider-Verse",
+    "team": "Aranhaverso",
     "img": "assets/characters/Spider-Man (MSH).png",
     "locomotion": "Teia",
     "dlc": null
@@ -2336,7 +2336,7 @@ const CHARACTERS = [
     "power": "Habilidade",
     "level": 7,
     "sizeRank": 3,
-    "team": "X-Men",
+    "team": "Vilões dos X-Men",
     "img": "assets/characters/Toad (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -2354,7 +2354,7 @@ const CHARACTERS = [
     "power": "Combate",
     "level": 7,
     "sizeRank": 3,
-    "team": "Spider-Verse",
+    "team": "Vilões do Homem-Aranha",
     "img": "assets/characters/Superior Spider-Man (MSH).png",
     "locomotion": "Teia",
     "dlc": null
@@ -2372,7 +2372,7 @@ const CHARACTERS = [
     "power": "Força",
     "level": 7,
     "sizeRank": 4,
-    "team": "Heróis Marvel",
+    "team": "X-Men",
     "img": "assets/characters/Colosus (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -2390,7 +2390,7 @@ const CHARACTERS = [
     "power": "Cósmico",
     "level": 7,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões Cósmicos e Místicos",
     "img": "assets/characters/Super-Skrull (MSH).png",
     "locomotion": "Voo",
     "dlc": null
@@ -2420,13 +2420,13 @@ const CHARACTERS = [
     "file": "Iron Patriot (MSH).png",
     "coins": 150000,
     "costLabel": "150.000 studs",
-    "faction": "Vilão",
+    "faction": "Herói",
     "race": "Humano",
     "raceGroup": "Terráqueo",
     "power": "Tecnologia",
     "level": 7,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vingadores",
     "img": "assets/characters/Iron Patriot (MSH).png",
     "locomotion": "Voo",
     "dlc": null
@@ -2444,7 +2444,7 @@ const CHARACTERS = [
     "power": "Furtividade",
     "level": 7,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões do Demolidor",
     "img": "assets/characters/Bullseye (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -2498,7 +2498,7 @@ const CHARACTERS = [
     "power": "Energia",
     "level": 7,
     "sizeRank": 4,
-    "team": "Avengers",
+    "team": "Vingadores",
     "img": "assets/characters/Iron Man (Hulkbuster) (MSH).png",
     "locomotion": "Planador",
     "dlc": null
@@ -2516,7 +2516,7 @@ const CHARACTERS = [
     "power": "Energia",
     "level": 8,
     "sizeRank": 3,
-    "team": "Heróis Marvel",
+    "team": "Illuminati",
     "img": "assets/characters/Black Bolt (MSH).png",
     "locomotion": "Voo",
     "dlc": null
@@ -2534,7 +2534,7 @@ const CHARACTERS = [
     "power": "Psíquico",
     "level": 5,
     "sizeRank": 3,
-    "team": "Fantastic Four",
+    "team": "Quarteto Fantástico",
     "img": "assets/characters/Mister Fantastic (MSH).png",
     "locomotion": "Planador",
     "dlc": null
@@ -2588,7 +2588,7 @@ const CHARACTERS = [
     "power": "Energia",
     "level": 7,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões do Homem-Aranha",
     "img": "assets/characters/Electro (Ultimate) (MSH).png",
     "locomotion": "Planador",
     "dlc": null
@@ -2606,7 +2606,7 @@ const CHARACTERS = [
     "power": "Habilidade",
     "level": 8,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões do Capitão América",
     "img": "assets/characters/Red Skull (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -2624,7 +2624,7 @@ const CHARACTERS = [
     "power": "Habilidade",
     "level": 7,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões do Hulk",
     "img": "assets/characters/The Leader (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -2642,7 +2642,7 @@ const CHARACTERS = [
     "power": "Furtividade",
     "level": 7,
     "sizeRank": 3,
-    "team": "Spider-Verse",
+    "team": "Aranhaverso",
     "img": "assets/characters/Black Cat (MSH).png",
     "locomotion": "Nenhuma",
     "dlc": null
@@ -2678,7 +2678,7 @@ const CHARACTERS = [
     "power": "Místico",
     "level": 5,
     "sizeRank": 3,
-    "team": "Heróis Marvel",
+    "team": "Illuminati",
     "img": "assets/characters/Doctor Strange (MSH).png",
     "locomotion": "Voo",
     "dlc": null
@@ -3075,7 +3075,7 @@ const CHARACTERS = [
     "power": "Cósmico",
     "level": 5,
     "sizeRank": 3,
-    "team": "X-Men",
+    "team": "Vilões dos X-Men",
     "dlc": "Super Pack",
     "img": "assets/characters/Dark Phoenix (MSH).png"
   },
@@ -3147,7 +3147,7 @@ const CHARACTERS = [
     "power": "Tecnologia",
     "level": 5,
     "sizeRank": 3,
-    "team": "Avengers",
+    "team": "Vingadores",
     "dlc": "Super Pack",
     "img": "assets/characters/Falcon (MSH).png"
   },
@@ -3219,7 +3219,7 @@ const CHARACTERS = [
     "power": "Cósmico",
     "level": 5,
     "sizeRank": 3,
-    "team": "Cosmos",
+    "team": "Vilões Cósmicos e Místicos",
     "dlc": null,
     "img": "assets/characters/Galactus (Minifig) (MSH).png"
   },
@@ -3237,7 +3237,7 @@ const CHARACTERS = [
     "power": "Tecnologia",
     "level": 5,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões do Hulk",
     "dlc": null,
     "img": "assets/characters/General Ross (MSH).png"
   },
@@ -3255,7 +3255,7 @@ const CHARACTERS = [
     "power": "Tecnologia",
     "level": 5,
     "sizeRank": 3,
-    "team": "Fantastic Four",
+    "team": "Quarteto Fantástico",
     "dlc": null,
     "img": "assets/characters/H.E.R.B.I.E (MSH).png"
   },
@@ -3291,7 +3291,7 @@ const CHARACTERS = [
     "power": "Combate",
     "level": 5,
     "sizeRank": 3,
-    "team": "Avengers",
+    "team": "Vingadores",
     "dlc": "Super Pack",
     "img": "assets/characters/Hawkeye (Classic) (MSH).png"
   },
@@ -3363,7 +3363,7 @@ const CHARACTERS = [
     "power": "Energia",
     "level": 5,
     "sizeRank": 3,
-    "team": "Fantastic Four",
+    "team": "Quarteto Fantástico",
     "dlc": null,
     "img": "assets/characters/Human Torch (Flame-On) (MSH).png"
   },
@@ -3471,7 +3471,7 @@ const CHARACTERS = [
     "power": "Combate",
     "level": 5,
     "sizeRank": 3,
-    "team": "Spider-Verse",
+    "team": "Aranhaverso",
     "dlc": null,
     "img": "assets/characters/Iron-Spider (MSH).png"
   },
@@ -3561,7 +3561,7 @@ const CHARACTERS = [
     "power": "Combate",
     "level": 5,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões do Homem-Aranha",
     "dlc": null,
     "img": "assets/characters/Kraven The Hunter (MSH).png"
   },
@@ -3579,7 +3579,7 @@ const CHARACTERS = [
     "power": "Força",
     "level": 5,
     "sizeRank": 4,
-    "team": "Villains",
+    "team": "Vilões de Asgard",
     "dlc": "Asgard Pack",
     "img": "assets/characters/Kurse (The Dark World) (MSH).png"
   },
@@ -3633,7 +3633,7 @@ const CHARACTERS = [
     "power": "Psíquico",
     "level": 5,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões do Homem de Ferro",
     "dlc": null,
     "img": "assets/characters/M.O.D.O.K (MSH).png"
   },
@@ -3669,7 +3669,7 @@ const CHARACTERS = [
     "power": "Místico",
     "level": 5,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões de Asgard",
     "dlc": "Asgard Pack",
     "img": "assets/characters/Malekith the Accursed (MSH).png"
   },
@@ -3687,7 +3687,7 @@ const CHARACTERS = [
     "power": "Místico",
     "level": 5,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões de Asgard",
     "dlc": "Asgard Pack",
     "img": "assets/characters/Malekith the Accursed (Dark World) (MSH).png"
   },
@@ -3849,7 +3849,7 @@ const CHARACTERS = [
     "power": "Cósmico",
     "level": 5,
     "sizeRank": 3,
-    "team": "Cosmos",
+    "team": "Vilões Cósmicos e Místicos",
     "dlc": null,
     "img": "assets/characters/Ronan The Accusor (MSH).png"
   },
@@ -4065,7 +4065,7 @@ const CHARACTERS = [
     "power": "Tecnologia",
     "level": 5,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões dos X-Men",
     "dlc": null,
     "img": "assets/characters/Sentinel (MSH).png"
   },
@@ -4101,7 +4101,7 @@ const CHARACTERS = [
     "power": "Combate",
     "level": 5,
     "sizeRank": 3,
-    "team": "Spider-Verse",
+    "team": "Aranhaverso",
     "dlc": "Super Pack",
     "img": "assets/characters/Spider-Man (Symbiote) (MSH).png"
   },
@@ -4137,7 +4137,7 @@ const CHARACTERS = [
     "power": "Tecnologia",
     "level": 5,
     "sizeRank": 3,
-    "team": "Guardians",
+    "team": "Guardiões da Galáxia",
     "dlc": null,
     "img": "assets/characters/Star Lord (MSH).png"
   },
@@ -4227,7 +4227,7 @@ const CHARACTERS = [
     "power": "Cósmico",
     "level": 5,
     "sizeRank": 4,
-    "team": "Cosmos",
+    "team": "Vilões Cósmicos e Místicos",
     "dlc": "Super Pack",
     "img": "assets/characters/Thanos (MSH).png"
   },
@@ -4245,7 +4245,7 @@ const CHARACTERS = [
     "power": "Habilidade",
     "level": 5,
     "sizeRank": 3,
-    "team": "Avengers",
+    "team": "Vingadores",
     "dlc": null,
     "img": "assets/characters/The Wasp (MSH).png"
   },
@@ -4263,7 +4263,7 @@ const CHARACTERS = [
     "power": "Tecnologia",
     "level": 5,
     "sizeRank": 3,
-    "team": "Villains",
+    "team": "Vilões do Quarteto Fantástico",
     "dlc": null,
     "img": "assets/characters/The Wizard (MSH).png"
   },
@@ -4317,7 +4317,7 @@ const CHARACTERS = [
     "power": "Combate",
     "level": 5,
     "sizeRank": 3,
-    "team": "Avengers",
+    "team": "Vingadores",
     "dlc": "Super Pack",
     "img": "assets/characters/Winter Soldier (MSH).png"
   },
